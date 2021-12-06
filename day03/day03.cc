@@ -51,55 +51,6 @@ main(int argc, char *argv[])
         }
     }
 
-#if 0
-            if (scrubber.size() > 1) {
-                for(auto it = scrubber.begin();it != scrubber.end();++it) {
-                    if ((*it)[i] == '0') {
-                        string str = (*it);
-                        tmp.push_back(str);
-                    }
-                }
-                scrubber.clear();
-                scrubber.swap(tmp);
-                tmp.clear();
-            }
-            if (generator.size() > 1) {
-                for(auto it = generator.begin();it != generator.end();++it) {
-                    if ((*it)[i] == '1') {
-                        string str = (*it);
-                        tmp.push_back(str);
-                        cout << "Added " << str << endl;
-                    }
-                }
-                generator.clear();
-                generator.swap(tmp);
-                tmp.clear();
-            }
-            if (scrubber.size() > 1) {
-                for(auto it = scrubber.begin();it != scrubber.end();++it) {
-                    if ((*it)[i] == '1') {
-                        string str = (*it);
-                        tmp.push_back(str);
-                    }
-                }
-                scrubber.clear();
-                scrubber.swap(tmp);
-                tmp.clear();
-            }
-            if (generator.size() > 1) {
-                for(auto it = generator.begin();it != generator.end();++it) {
-                    if ((*it)[i] == '0') {
-                        string str = (*it);
-                        tmp.push_back(str);
-                        cout << "Added " << str << endl;
-                    }
-                }
-                generator.clear();
-                generator.swap(tmp);
-                tmp.clear();
-            }
-#endif
-
     cout << "Part 1: The power consumption is " << gamma * epsilon << endl;
     for (size_t i = 0;i<ones.size();i++) {
         int ones = 0;
